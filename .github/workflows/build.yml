@@ -24,9 +24,6 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: 12
-    - uses: stefanoeb/jest-action@1.0.3
-    - uses: bahmutov/npm-install@HEAD
-      with:
-        useLockFile: false
-    - run: npm t
+    - run: npm install
+    - run: npm run test:unit
     - run: npm run build
