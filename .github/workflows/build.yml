@@ -25,5 +25,8 @@ jobs:
       with:
         node-version: 12
     - uses: stefanoeb/jest-action@1.0.3
-    - run: npm install
+    - uses: bahmutov/npm-install@HEAD
+      with:
+        useLockFile: false
+    - run: npm t
     - run: npm run build
