@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Test and Deploy
 
 # Controls when the action will run. Triggers the workflow on push or pull request 
 # events but only for the master branch
@@ -25,3 +25,5 @@ jobs:
       with:
         node-version: 12
     - uses: stefanoeb/jest-action@1.0.3
+    - run: npm install
+    - run: npm run build
