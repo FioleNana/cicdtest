@@ -25,5 +25,3 @@ jobs:
       with:
         node-version: 12
     - uses: stefanoeb/jest-action@1.0.3
-    - run: npm install --global @vue/cli
-    - run: npm run jest
