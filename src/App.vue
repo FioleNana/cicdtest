@@ -5,13 +5,15 @@
                 You know, this is a pretty neat container for
                 containery things.
             </p>
-            <NiftyButton label="Big Oof" :click-event="doAnAlert"/>
+            <NiftyButton bg-color="blue" label="Big Oof" :click-event="doAnAlert"/>
+            <GreatInput />
         </main>
     </div>
 </template>
 
 <script>
     import NiftyButton from "@/components/NiftyButton/NiftyButton";
+    import GreatInput from "@/components/GreatInput/GreatInput";
 
     export default {
         name: 'App',
@@ -21,6 +23,7 @@
             }
         },
         components: {
+            GreatInput,
             NiftyButton
         }
     }

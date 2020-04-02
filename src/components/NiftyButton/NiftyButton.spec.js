@@ -18,5 +18,5 @@ describe('NiftyButton.vue', () => {
 
         wrapper.find('button').trigger('click');
         expect(clickEvent.mock.calls.length).toEqual(1);
-    })
+    });
 });

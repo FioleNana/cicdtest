@@ -6,6 +6,7 @@
         name: 'NiftyButton',
         props: {
             label: String,
+            bgColor: String,
             clickEvent: {
                 type: Function,
                 default: () => {}
